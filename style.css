@@ -4,7 +4,7 @@
   --grey_500: hsl(186, 15%, 59%);
   --white: hsl(0, 0%, 100%);
   --green_600: hsl(169, 82%, 27%);
-  --green_200: hsl(148, 38%, 91%);
+  --green_200: hsl(148, 39%, 91%);
   --red_errors: hsl(0, 66%, 54%);
 
   /* Typography */
@@ -50,4 +50,100 @@
   --spacing-1600: clamp(40px, calc(40px + (128 - 40) * ((100vw - 375px) / (1440 - 375))), 128px);
 
 
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--green_200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+  font-family: var(--font-main);
+}
+.hidden{
+  display: none;
+}
+.contact-card{
+ max-width: 736px;
+ width: 100%;
+ background-color: var(--white);
+ display: flex;
+ flex-direction: column;
+ padding: var(--spacing-500);
+ gap: var(--spacing-400);
+ border-radius: var(--spacing-200);
+}
+.contact-card__title{
+  color:var(--grey_900);
+  font-size: var(--fs-heading);
+  font-weight:var(--fw-bold) ;
+  letter-spacing: var(--ls-heading);
+  line-height: var( --lh-heading);
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+  font-size:var(--fs-md);
+  line-height:var(--lh-base) ;
+  letter-spacing:var(--ls-none) ;
+  color: var(--grey_900);
+}
+.contact-form__row{
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-200);
+  justify-content: space-between;
+
+}
+.form-group{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-100);
+}
+.form-group__input{
+padding: var(--spacing-150) var(--spacing-200);
+  border: 1px solid var(--grey_500);
+  border-radius: var(--spacing-100);
+  outline: none;
+}
+.form-group__input:hover{
+  cursor: pointer;
+}
+.error-message{
+  display: none;
+  font-size: var(----fs-md);
+  line-height: var(----lh-base);
+  color: var(--red_errors);
+}
+.query-type{
+  border: 0;
+}
+.query-type__options{
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-200);
+  justify-content: space-between;
+  margin-top:var(--spacing-100);
+}
+.radio-card{
+  width: 100%;
+  padding: var(--spacing-150) var(--spacing-200);
+  border: 1px solid var(--grey_500);
+  border-radius: var(--spacing-100);
+}
+.submit-btn{
+  border: 0;
+  background-color: var(--green_600);
+  padding: var(--spacing-200);
+  border-radius: var(--spacing-100);
+  color: var(--white);
+  font-size: var(--fs-sm);
+  line-height: var( --fs-md);
 }
