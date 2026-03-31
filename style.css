@@ -31,9 +31,6 @@
   /* 0px Letter Spacing */
   --ls-heading: -0.0625rem;
 
-
-
-
   /* Spacing */
   --spacing-100: 0.5rem;
 
@@ -48,8 +45,6 @@
   --spacing-500: clamp(32px, calc(32px + (40 - 32) * ((100vw - 375px) / (1440 - 375))), 40px);
 
   --spacing-1600: clamp(40px, calc(40px + (128 - 40) * ((100vw - 375px) / (1440 - 375))), 128px);
-
-
 }
 
 *{
@@ -69,8 +64,7 @@ body{
   display: none;
 }
 .contact-card{
- max-width: 736px;
- width: 100%;
+width: 736px;
  background-color: var(--white);
  display: flex;
  flex-direction: column;
@@ -116,12 +110,14 @@ padding: var(--spacing-150) var(--spacing-200);
 .form-group__input:hover{
   cursor: pointer;
 }
+
 .error-message{
   display: none;
   font-size: var(----fs-md);
   line-height: var(----lh-base);
   color: var(--red_errors);
 }
+
 .query-type{
   border: 0;
 }
@@ -138,6 +134,13 @@ padding: var(--spacing-150) var(--spacing-200);
   border: 1px solid var(--grey_500);
   border-radius: var(--spacing-100);
 }
+.radio-card:hover{
+  cursor: pointer;
+  background-color: var(--green_200);
+}
+.error{
+  border: 1px solid var(--red_errors);
+}
 .submit-btn{
   border: 0;
   background-color: var(--green_600);
@@ -146,4 +149,30 @@ padding: var(--spacing-150) var(--spacing-200);
   color: var(--white);
   font-size: var(--fs-sm);
   line-height: var( --fs-md);
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover{
+  cursor: pointer;
+ background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-color: var(--green_600);
+ 
+}
+@media(max-width:1080px){
+  .contact-card{
+width: 690px;
+}
+}
+
+@media(max-width:768px){
+  .contact-card{
+width: 343px;
+}
+.contact-form__row{
+  flex-direction: column;
+  gap: var(--spacing-300);
+}
+.query-type__options{
+  flex-direction: column;
+}
 }
