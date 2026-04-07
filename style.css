@@ -7,6 +7,7 @@
   --green_200: hsl(148, 39%, 91%);
   --red_errors: hsl(0, 66%, 54%);
 
+
   /* Typography */
   /* Font Family */
   --font-main: 'Karla', sans-serif;
@@ -110,10 +111,6 @@ padding: var(--spacing-150) var(--spacing-200);
 .form-group__input:hover{
   cursor: pointer;
 }
-.form-group__input.error,
-.form-group__textarea.error {
-  border: 1px solid var(--red_errors) !important;
-}
 
 .error-message{
   display: none;
@@ -140,13 +137,18 @@ padding: var(--spacing-150) var(--spacing-200);
 }
 .radio-card-selected{
    background-color: var(--green_200);
+   border: 1px solid var(--green_600);
 }
+
 .radio-card:hover{
   cursor: pointer;
   background-color: var(--green_200);
 }
 .error{
-  border: 1px solid var(--red_errors);
+  border: 2px solid var(--red_errors);
+}
+.correct{
+  border: 2px solid var(--green_600);!important
 }
 .submit-btn{
   border: 0;
