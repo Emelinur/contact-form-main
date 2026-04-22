@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add your Frontend Mentor solution URL here](https://www.frontendmentor.io/)
-- Live Site URL: [Add your live site URL here](https://example.com)
+- Solution URL: [Add your Frontend Mentor solution URL here](https://www.frontendmentor.io/solutions/contact-form-main-UPJdsvkj4J)
+- Live Site URL: [Add your live site URL here](https://emelinur.github.io/contact-form-main/)
 
 ## My process
 
@@ -67,4 +67,4 @@ In future projects, I want to improve:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Emelinur](https://www.frontendmentor.io/profile/Emelinur?tab=solutions)
