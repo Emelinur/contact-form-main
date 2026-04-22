@@ -110,6 +110,7 @@ padding: var(--spacing-150) var(--spacing-200);
 }
 .form-group__input:hover{
   cursor: pointer;
+  border: 2px solid var(--green_600);
 }
 
 .error-message{
@@ -137,7 +138,7 @@ padding: var(--spacing-150) var(--spacing-200);
 }
 .radio-card-selected{
    background-color: var(--green_200);
-   border: 1px solid var(--green_600);
+   border: 2px solid var(--green_600);
 }
 
 .radio-card:hover{
