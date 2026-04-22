@@ -35,7 +35,6 @@
                 name="first-name"
                 class="form-group__input"
                 autocomplete="First Name"
-                required
               />
               <p class="error-message">This field is required</p>
             </div>
@@ -47,7 +46,7 @@
                 name="last-name"
                 class="form-group__input"
                 autocomplete="Last Name"
-                required
+
               />
               <p class="error-message">This field is required</p>
             </div>
@@ -61,7 +60,6 @@
               autocomplete="Email"
               class="form-group__input"
               placeholder="email#example.com"
-              required
             />
             <p class="error-message">Please enter a valid email address</p>
             <p class="error-message">This field is required</p>
@@ -75,7 +73,6 @@
                   id="general"
                   name="query-type"
                   value="general"
-                  required
                 />
                 <label for="general">General Enquiry</label>
               </div>
@@ -85,7 +82,6 @@
                   id="support"
                   name="query-type"
                   value="support"
-                  required
                 />
                 <label for="support">Support Request</label>
               </div>
@@ -100,13 +96,12 @@
               cols="30"
               rows="5"
               class="form-group__textarea"
-              required
             ></textarea>
             <p class="error-message">This field is required</p>
           </div>
           <div class="consent-group">
             <div class="consent-group__inner">
-              <input type="checkbox" id="consent" name="consent" required />
+              <input type="checkbox"  id="consent" name="consent" />
               <label for="consent"
                 >I consent to being contacted by the team *</label
               >

@@ -148,7 +148,7 @@ padding: var(--spacing-150) var(--spacing-200);
   border: 2px solid var(--red_errors);
 }
 .correct{
-  border: 2px solid var(--green_600);!important
+  border: 2px solid var(--green_600);
 }
 .submit-btn{
   border: 0;
@@ -170,16 +170,19 @@ padding: var(--spacing-150) var(--spacing-200);
 @media(max-width:1080px){
   .contact-card{
 width: 690px;
+height: 100%
 }
 }
 
 @media(max-width:768px){
   .contact-card{
 width: 343px;
+ height: 100%;
 }
 .contact-form__row{
   flex-direction: column;
   gap: var(--spacing-300);
+ 
 }
 .query-type__options{
   flex-direction: column;

@@ -1,15 +1,15 @@
 const submitBtn = document.querySelector(".submit-btn");
 const contactForm = document.querySelector(".contact-form");
 const InputAll = document.querySelectorAll("input");
-const formGroupInput=document.querySelectorAll(".form-group__input");
+const textInputs = document.querySelectorAll(".form-group__input");
 
-formGroupInput.forEach((btn)=>{
-  
-  btn.addEventListener("click",(e)=>{
-    e.target.classList.add("correct")
+textInputs.forEach((input) => {
+  input.addEventListener("focus", () => {
+    textInputs.forEach((item) => item.classList.remove("correct"));
+    input.classList.add("correct");
+  });
+});
 
-  })
-})
 
 
 const isRadioSelected = document.querySelector(
